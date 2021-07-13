@@ -1,0 +1,96 @@
+/* - Very dark cyan: hsl(183, 100%, 15%)
+- Dark grayish cyan: hsl(186, 14%, 43%)
+- Dark grayish cyan: hsl(184, 14%, 56%)
+- Light grayish cyan: hsl(185, 41%, 84%)
+- Light grayish cyan: hsl(189, 41%, 97%)
+- White: hsl(0, 0%, 100%) */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Mono', monospace;
+}
+
+h2 {
+    color: hsl(172, 67%, 45%);
+}
+
+#mainContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 480px) {
+    #mainContainer {
+        flex-direction: row;
+    }
+    #resetBtn {
+        width: 42vh;
+    }
+}
+
+.bg-dark-cyan {
+    background-color: hsl(183, 100%, 15%);
+}
+
+.bg-light-cyan {
+    background-color: hsl(185, 41%, 84%);
+}
+
+.bg-strong-cyan {
+    background-color: hsl(172, 67%, 45%);
+}
+
+.bg-white-cyan {
+    background-color: hsl(189, 41%, 97%);
+}
+
+.b-radius {
+    border-radius: 15px;
+}
+
+.bg-mywhite {
+    background-color: hsl(0, 0%, 100%);
+}
+
+#resetBtn {
+    font-size: 24px;
+    font-weight: 700;
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    border: none;
+}
+
+#resetBtn:hover {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(189, 41%, 97%);
+}
+
+button:hover {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    cursor: pointer;
+}
+
+input {
+    text-align: right;
+    font-weight: 500;
+    font-size: 20px;
+    color: hsl(183, 100%, 15%);
+    border-style: solid;
+    border-color: hsl(172, 67%, 45%);
+    background-color: hsl(189, 41%, 97%);
+    ;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#perPerson {
+    color: hsl(186, 14%, 43%);
+}
+
+@media (max-width: 480px) {}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tip calculator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="bg-light-cyan" >
+    <div class="mt-4 bg-light-cyan d-flex flex-row justify-content-center">
+        <img src="./images/logo.png" width="75px">
+        <h1 class="ml-2">Dolphtip</h1>
+    </div>
+    <div class="bg-light-cyan d-flex  justify-content-center">
+        <div class="bg-mywhite b-radius m-4" id="mainContainer">
+            <div class="b-radius m-4 d-flex flex-column justify-content-around" id="keyPadContainer">
+
+                <div class="d-flex flex-column">
+                    <span class="ml-2">Bill</span>
+                    <input id="billInput" class="rounded p-2 mt-2" placeholder="$" type="number">
+                </div>
+
+
+                <div class="p-2" id="btnGrid">
+                    <span>Select Tip %</span>
+                    <div class="mt-2">
+                        <div class="row">
+                            <button value="0.5" class="text-white border-0 col m-1 bg-dark-cyan p-2 rounded">5%</button>
+                            <button value="0.10"
+                                class="text-white border-0 col m-1 bg-dark-cyan p-2 rounded">10%</button>
+                            <button value="0.15"
+                                class="text-white border-0 col m-1 bg-dark-cyan p-2 rounded">15%</button>
+
+                        </div>
+                        <div class="row">
+                            <button value="0.25"
+                                class="text-white border-0 col m-1 bg-dark-cyan p-2 rounded">25%</button>
+                            <button value="0.50"
+                                class="text-white border-0 col m-1 bg-dark-cyan p-2 rounded">50%</button>
+                            <input id="customTip"
+                                class="text-white border-0 col m-1 bg-dark-cyan p-2 rounded text-center" placeholder="%"
+                                type="text">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="d-flex flex-column">
+                    <span class="ml-2">Number of People</span>
+                    <input placeholder="nº" value="1" id="peopleInput" class="rounded p-2 mt-2" type="number">
+                </div>
+
+            </div>
+
+            <div class=" d-flex flex-column justify-content-around b-radius bg-dark-cyan m-4 p-4" id="resultContainer">
+                <div class="d-flex flex-row justify-content-between">
+                    <div class="d-flex flex-column">
+                        <span class="text-white">Tip Amount</span>
+                        <span class="" id="perPerson">Per Person</span>
+                    </div>
+                    <h2 id="amountDisplay">$0.00</h1>
+                </div>
+                <div class="d-flex flex-row justify-content-between">
+                    <div class="d-flex flex-column">
+                        <span class="text-white">Total</span>
+                        <span class="" id="perPerson">Per Person</span>
+                    </div>
+                    <h2 id="totalDisplay">$0.00</h1>
+                </div>
+
+                <button class="rounded p-2" id="resetBtn">RESET</button>
+
+            </div>
+
+
+
+
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+                integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+                crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+                integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+                crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+                integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+                crossorigin="anonymous"></script>
+            <script src="./script.js"></script>
+        </div>
+    </div>
+</body>
+
+</html>
