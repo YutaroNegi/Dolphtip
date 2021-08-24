@@ -12,7 +12,7 @@
  # Sobre
  <img src="./images/readmeGif.gif" >
 
- <p>Dolphtip, a calculadora de gorjetas criada com JS, HTML, CSS e Bootstrap - O design foi retirado do site: <a href="https://www.frontendmentor.io/">Front End Mentor</a></p>
+ <p>Dolphtip, a calculadora de gorjetas criada com JS, HTML, CSS e Bootstrap - O design foi inspirado do site: <a href="https://www.frontendmentor.io/">Front End Mentor</a></p>
  <p>Você mesmo pode conferir o projeto clicando nesse <a href="https://yutaronegi.github.io/Dolphtip/">Link</a></p>
 
 
